@@ -17,6 +17,8 @@ export default {
 <style scoped lang="scss">
 @import "@/assets/style/variables.scss";
   h2{
-    color: green;
+    font-size: 35px;
+    padding: 50px 0;
+    color: #fff;
   }
 </style>
