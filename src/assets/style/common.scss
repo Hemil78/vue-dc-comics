@@ -18,7 +18,37 @@ body{
 .container {
     max-width: $sizeContainer;
     margin: 0 auto;
+    padding: 0 15px;
     border: 1px solid red;
+}
+
+/* background and width section */
+header,
+.content,
+.digital,
+.footer-up,
+.footer-down{
+    width: 100%;
+}
+header{
+    background-color: #fff;
+}
+.content{
+    background-color: #1c1c1c;
+}
+.digital{
+    background-color: $mainColor;
+}
+
+.footer-down{
+    background-color: #303030;
+}
+
+
+.footerUp-bg{
+    background-image: url("/images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 

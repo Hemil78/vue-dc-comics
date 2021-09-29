@@ -16,12 +16,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "@/assets/style/variables.scss";
   h2{
     color: rgb(235, 0, 204);
   }
-  .footer-up{
-    background-image: url(./assets/image/footer-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 </style>

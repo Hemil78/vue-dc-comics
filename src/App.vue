@@ -28,7 +28,7 @@
     
     <footer>
 
-      <section class="footer-up">
+      <section class="footer-up footerUp-bg">
         <div class="container">
           <FooterUp/>
         </div>
