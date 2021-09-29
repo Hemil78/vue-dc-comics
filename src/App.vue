@@ -1,22 +1,53 @@
 <template>
 
-  <div id="app">
+  <div id="app" >
 
-    <Header/>
+    <header>
+
+      <section class="container">
+        <Header/>
+      </section>
+      
+    </header>
 
     <main>
-      <Components/>
-      <Digital/>
+
+      <section class="content">
+        <div class="container">
+          <Components/>
+        </div>
+      </section>
+
+      <section class="digital">
+        <div class="container">
+          <Digital/>
+        </div>
+      </section>
+      
     </main>
     
     <footer>
-      <FooterUp/>
-      <FooterDown/>
+
+      <section class="footer-up">
+        <div class="container">
+          <FooterUp/>
+        </div>
+      </section>
+
+      <section class="footer-down">
+        <div class="container">
+          <FooterDown/>
+        </div>
+      </section>
+      
+      
     </footer>
     
   </div>
 
 </template>
+      
+      
 
 <script>
   
@@ -40,7 +71,9 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  
-}
+
+@import "./assets/style/common";
+
+
+
 </style>

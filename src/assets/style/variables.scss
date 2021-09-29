@@ -1,0 +1,27 @@
+$mainColor: #0282f9;
+
+$colorIcons: #797979;
+
+/* width contenuto */
+$sizeContainer: 80%;
+
+/* background and width section */
+header,
+.content,
+.digital,
+.footer-up,
+.footer-down{
+    width: 100%;
+}
+header{
+    background-color: #fff;
+}
+.content{
+    background-color: #1c1c1c;
+}
+.digital{
+    background-color: $mainColor;
+}
+.footer-down{
+    background-color: #303030;
+}

@@ -19,4 +19,9 @@ export default {
   h2{
     color: rgb(235, 0, 204);
   }
+  .footer-up{
+    background-image: url(./assets/image/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 </style>
