@@ -64,6 +64,9 @@ export default {
     list-style: none;
     padding: 55px 0;
     li{
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.377);
+      }
       a{
         display: inline-block;
         text-decoration: none;
