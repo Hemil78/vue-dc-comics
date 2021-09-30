@@ -1,6 +1,40 @@
 <template>
     <footer>
-        <h2>FooterDown</h2>
+        <div class="btn-footer">
+          <button>SIGN-UP NOW!</button>
+        </div>
+        <div class="icons-footer">
+
+          <span>FOLLOW US</span>
+
+          <ul>
+            <li>
+              <a href="#">
+                <img src="~@/assets/images/footer-facebook.png" alt="logo facebbok">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~@/assets/images/footer-twitter.png" alt="logo twitter">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~@/assets/images/footer-youtube.png" alt="logo youtube">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~@/assets/images/footer-pinterest.png" alt="logo pinterest">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="~@/assets/images/footer-periscope.png" alt="logo periscope">
+              </a>
+            </li>
+          </ul>
+        </div>
     </footer>
 </template>
 
@@ -15,8 +49,50 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 @import "@/assets/style/variables.scss";
-  h2{
-    color: rgb(121, 0, 235);
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .btn-footer{
+
+      button{
+        background-color: transparent;
+        border: none;
+        border: 1px solid $mainColor;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover{
+          background-color: $mainColor;
+        }
+      }
+    }
+
+    .icons-footer{
+      display: flex;
+      align-items: center;
+
+      span{
+        color: $mainColor;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      ul{
+        display: flex;
+        list-style: none;
+        margin-left: 10px;
+
+        li{
+          margin-left: 15px;
+        }
+      }
+    }
   }
+
+          
 </style>
