@@ -2,38 +2,11 @@
 
     <div class="icons-descript">
         <ul>
-          <li>
-            <a href="#">
-              <img src="@/assets/images/buy-comics-digital-comics.png" alt="">
-              <span>DIGITAL COMICS</span>
-            </a>
-          </li>
 
-          <li>
+          <li v-for="(link, index) in menu" :key="index">
             <a href="#">
-              <img src="@/assets/images/buy-comics-merchandise.png" alt="">
-              <span>DIGITAL COMICS</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="@/assets/images/buy-comics-subscriptions.png" alt="">
-              <span>DIGITAL COMICS</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="@/assets/images/buy-comics-shop-locator.png" alt="">
-              <span>DIGITAL COMICS</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="#">
-              <img src="@/assets/images/buy-dc-power-visa.svg" alt="">
-              <span>DIGITAL COMICS</span>
+              <img :src= "link.src">
+              <span>{{link.text}}</span>
             </a>
           </li>
 
@@ -45,8 +18,37 @@
 <script>
 export default {
   name: "Digital",
-  props: {
-    msg: String
+  data() {
+    return {
+      menu: [
+        {
+          "text": "DIGITAL COMICS",
+          "src": "~@/assets/images/buy-comics-digital-comics.png",
+          "current": false
+        },
+        {
+          "text": "DC MERCHANDISE",
+          "src": "~@/assets/images/buy-comics-merchandise.png",
+          "current": false
+        },
+        {
+          "text": "SUBSCRIPTION",
+          "src": "~@/assets/images/buy-comics-subscriptions.png",
+          "current": true
+        },
+        {
+          "text": "COMIC SHOP LOCATION",
+          "src": "~@/assets/images/buy-comics-shop-locator.png",
+          "current": false
+        },
+        {
+          "text": "DC POWER VISA",
+          "src": "~@/assets/images/buy-dc-power-visa.svg",
+          "current": false
+        }
+        
+      ]
+    }
   }
 }
 </script>
