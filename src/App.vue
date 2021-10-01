@@ -13,8 +13,8 @@
     <main>
 
       <section class="content">
-        <div class="container">
-          <Components/>
+        <div class="container reset-padding">
+          <LibraryHero/>
         </div>
       </section>
 
@@ -52,7 +52,7 @@
 <script>
   
   import Header from '@/components/Header.vue';
-  import Components from '@/components/Components.vue';
+  import LibraryHero from '@/components/LibraryHero.vue';
   import Digital from '@/components/Digital.vue';
   import FooterUp from '@/components/FooterUp.vue';
   import FooterDown from '@/components/FooterDown.vue';
@@ -61,7 +61,7 @@ export default {
   name: 'App',
   components: {
     Header,
-    Components,
+    LibraryHero,
     Digital,
     FooterUp,
     FooterDown
