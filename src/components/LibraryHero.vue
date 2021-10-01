@@ -150,7 +150,7 @@ export default {
     left: 0;
     right: 0;
     color: #fff;
-    height: 90px;
+    height: 75px;
     padding-top: 20px;
     background-color: $colorBackStage;
     font-size: 15px;

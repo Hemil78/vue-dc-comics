@@ -12,6 +12,12 @@
 
     <main>
 
+      <section class="jumbo">
+        <div class="container">
+          <Jumbotron/>
+        </div>
+      </section>
+
       <section class="content">
         <div class="container reset-padding">
           <LibraryHero/>
@@ -52,6 +58,7 @@
 <script>
   
   import Header from '@/components/Header.vue';
+  import Jumbotron from '@/components/Jumbotron.vue';
   import LibraryHero from '@/components/LibraryHero.vue';
   import Digital from '@/components/Digital.vue';
   import FooterUp from '@/components/FooterUp.vue';
@@ -61,6 +68,7 @@ export default {
   name: 'App',
   components: {
     Header,
+    Jumbotron,
     LibraryHero,
     Digital,
     FooterUp,
