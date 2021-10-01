@@ -10,27 +10,27 @@
           <ul>
             <li>
               <a href="#">
-                <img src="~@/assets/images/footer-facebook.png" alt="logo facebbok">
+                <img src="../assets/img/footer-facebook.png" alt="logo facebbok">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="~@/assets/images/footer-twitter.png" alt="logo twitter">
+                <img src="../assets/img/footer-twitter.png" alt="logo twitter">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="~@/assets/images/footer-youtube.png" alt="logo youtube">
+                <img src="../assets/img/footer-youtube.png" alt="logo youtube">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="~@/assets/images/footer-pinterest.png" alt="logo pinterest">
+                <img src="../assets/img/footer-pinterest.png" alt="logo pinterest">
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="~@/assets/images/footer-periscope.png" alt="logo periscope">
+                <img src="../assets/img/footer-periscope.png" alt="logo periscope">
               </a>
             </li>
           </ul>
@@ -50,7 +50,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@import "@/assets/style/variables.scss";
+@import "../assets/style/common.scss";
 
   footer{
     display: flex;

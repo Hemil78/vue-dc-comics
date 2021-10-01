@@ -4,22 +4,22 @@
 
       <div class="box-cards">
 
-        <div class="card" v-for="(link, index) in menu" :key="index">
+        <div class="card" v-for="(card, index) in cards" :key="index">
           <a href="#">
             <div class="img-card">
               
-                <img :src="link.thumb">
+                <img :src="card.thumb">
               
             </div>
 
             <div class="text">
-              <span>{{link.series}}</span>
+              <span>{{card.series}}</span>
             </div>
           </a>
         </div>
 
-
       </div>
+
       <div class="btn-card">
         <button>LOAD MORE</button>
       </div>
@@ -33,7 +33,7 @@ export default {
   name: "LibraryHero",
   data() {
     return {
-      menu: [
+      cards: [
         {
           "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
           "price": "$19.99",
@@ -127,7 +127,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@import "@/assets/style/variables.scss";
+@import "../assets/style/common.scss";
 
 .currentCard{
   width: 100%;

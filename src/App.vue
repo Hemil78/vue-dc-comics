@@ -82,6 +82,18 @@ export default {
 
 @import "./assets/style/common";
 
+.footerUp-bg{
+    background-image: url("./assets/img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbo{
+    background-image: url("./assets/img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 </style>
