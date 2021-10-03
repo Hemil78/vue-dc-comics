@@ -44,6 +44,7 @@ export default {
   props: {
     msg: String
   }
+  
 }
 </script>
 
@@ -52,47 +53,47 @@ export default {
 
 @import "../assets/style/common.scss";
 
-  footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
 
-    .btn-footer{
+  .btn-footer{
 
-      button{
-        background-color: transparent;
-        border: none;
-        border: 1px solid $mainColor;
-        color: #fff;
-        padding: 10px;
-        cursor: pointer;
+    button{
+      background-color: transparent;
+      border: none;
+      border: 1px solid $mainColor;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
 
-        &:hover{
-          background-color: $mainColor;
-        }
-      }
-    }
-
-    .icons-footer{
-      display: flex;
-      align-items: center;
-
-      span{
-        color: $mainColor;
-        font-size: 18px;
-        font-weight: bold;
-      }
-      ul{
-        display: flex;
-        list-style: none;
-        margin-left: 10px;
-
-        li{
-          margin-left: 15px;
-        }
+      &:hover{
+        background-color: $mainColor;
       }
     }
   }
+
+  .icons-footer{
+  display: flex;
+  align-items: center;
+
+    span{
+      color: $mainColor;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      margin-left: 10px;
+
+      li{
+        margin-left: 15px;
+      }
+    }
+  }
+}
 
           
 </style>

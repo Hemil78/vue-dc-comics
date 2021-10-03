@@ -24,17 +24,7 @@
           <div class="link-central">
             <h3>DC</h3>
             <ul>
-              <li><a href="#">Terms Of Use</a></li>
-              <li><a href="#">Privacy policy(New)</a></li>
-              <li><a href="#">Ad Choices</a></li>
-              <li><a href="#">Advertising</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Subscriptions</a></li>
-              <li><a href="#">Talent Workshops</a></li>
-              <li><a href="#">CPSC Certificates</a></li>
-              <li><a href="#">Ratings</a></li>
-              <li><a href="#">Shop Help</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li v-for="(link, index) in menu" :key="index"><a href="#">{{link.text}}</a></li>
             </ul>
           </div>
           <div class="link-right">
@@ -60,7 +50,69 @@ export default {
   name: "FooterUp",
   props: {
     msg: String
-  }
+  },
+    data() {
+    return {
+      menu: [
+        {
+          text: "Terms Of Use",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Privacy policy(New)",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Ad Choices",
+          url: "#",
+          current: true
+        },
+        {
+          text: "Advertising",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Jobs",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Subscriptions",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Talent Workshops",
+          url: "#",
+          current: false
+        },
+        {
+          text: "CPSC Certificates",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Ratings",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Shop Help",
+          url: "#",
+          current: false
+        },
+        {
+          text: "Contact Us",
+          url: "#",
+          current: false
+        }
+      ]
+    }
+  },
+  
 }
 </script>
 
@@ -121,7 +173,7 @@ export default {
 
 .link-left,
 .link-central{
-  margin-right: 30px;
+  margin-right: 70px;
 }
 
 
